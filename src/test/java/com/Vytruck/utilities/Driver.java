@@ -19,6 +19,7 @@ public class Driver {
     //private static WebDriver driver; // default value = null
 
     private static InheritableThreadLocal<WebDriver> driverPool = new InheritableThreadLocal<>();
+    //
 
     /*
     Create a re-usable utility method which will return the same driver instance once we call it.
