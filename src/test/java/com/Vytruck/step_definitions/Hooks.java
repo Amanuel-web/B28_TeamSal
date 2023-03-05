@@ -20,7 +20,7 @@ for ALL the SCENARIOS and even STEPS.
  */
 public class Hooks {
 
-//nice//
+//nice////
 
 
     //import the @Before coming from io.cucumber.java
