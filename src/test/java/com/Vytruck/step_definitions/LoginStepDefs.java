@@ -3,6 +3,8 @@ package com.Vytruck.step_definitions;
 import com.Vytruck.pages.LoginPage;
 import com.Vytruck.utilities.ConfigurationReader;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+
 public class LoginStepDefs {
 
 
@@ -14,8 +16,8 @@ public class LoginStepDefs {
     @Given("the user logged in as {string}")
     public void the_user_logged_in_as(String userType) {
         //based on input enter that user information
-        String username ="salesmanager101";
-        String password ="UserUser123";
+        String username = null;
+        String password = null;
 
         if(userType.equalsIgnoreCase("driver")){
             username = ConfigurationReader.getProperty("driver_username");
@@ -33,12 +35,10 @@ public class LoginStepDefs {
 
     @Given("the user logged in with username as {string} and password as {string}")
     public void the_user_logged_in_with_username_as_and_password_as(String username, String password) {
-      LoginPage loginPage=new LoginPage();
+        //LoginPage loginPage =new LoginPage();
+
+      LoginPage loginPage =new LoginPage();
       loginPage.login(username,password);
     }
-
-
-
-
 
 }
