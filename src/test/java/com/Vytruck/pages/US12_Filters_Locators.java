@@ -15,6 +15,7 @@ public class US12_Filters_Locators {
     @FindBy(xpath = "(//div[@class='filter-item oro-drop'])")
     public WebElement optionDropdown;
 
+
     @FindBy(xpath = "(//span[@class='title title-level-1'])[3]")
     public WebElement customers_tab;
 

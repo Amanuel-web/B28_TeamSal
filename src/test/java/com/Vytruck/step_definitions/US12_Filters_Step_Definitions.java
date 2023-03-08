@@ -16,6 +16,7 @@ public class US12_Filters_Step_Definitions {
 
     @Given("user clicks Customers tab.")
     public void user_clicks_customers_tab() {
+        BrowserUtils.sleep(2);
         us_12.customers_tab.click();
     }
 
@@ -43,8 +44,6 @@ public class US12_Filters_Step_Definitions {
         actualOptions.add(us_12.businessUnit.getText().substring(0,us_12.businessUnit.getText().indexOf(":")));
         actualOptions.add(us_12.created_at.getText().substring(0,us_12.created_at.getText().indexOf(":")));
         actualOptions.add(us_12.updated_at.getText().substring(0,us_12.updated_at.getText().indexOf(":")));
-
-
 
         Assert.assertEquals(expectedOptions,actualOptions);
 
