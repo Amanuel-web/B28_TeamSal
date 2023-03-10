@@ -36,11 +36,25 @@ public class US4_contractsStepDefinition {
 
         us4.vehicleContracts.click();
 
+        BrowserUtils.sleep(5);
+
     }
     @Then("user should be on All Vehicle Contract page")
     public void user_should_be_on_all_vehicle_contract_page() {
 
-        try {
+
+        String expectedTitle = "All - Vehicle Contract - Entities - System - Car - Entities - System";
+        String actualTitle = Driver.getDriver().getTitle();
+        //System.out.println("expectedTitle = " + expectedTitle);
+        //System.out.println("actualTitle = " + actualTitle);
+
+        Assert.assertTrue(expectedTitle.equals(actualTitle));
+
+
+
+
+
+        /*try{
             String actualTitle = Driver.getDriver().getTitle();
             actualTitle = actualTitle.substring(0, actualTitle.indexOf("Contract"));
             String expectedTitle = "All - Vehicle Contract - Entities - System - Car - Entities - System";
@@ -49,7 +63,8 @@ public class US4_contractsStepDefinition {
 
             System.out.println("Test Passed!");
 
-        }
+        }*/
+
 
         //System.out.println(actualTitle);
 

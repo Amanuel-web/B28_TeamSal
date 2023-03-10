@@ -13,12 +13,12 @@ Feature: As a user, I want to access to Vehicle contracts page
     Then user should click on Vehicle Contract page
     Then user should be on All Vehicle Contract page
 
+  @SalesManager
   Scenario: Store managers access the Vehicle contracts page.
     Given the user logged in with username as "salesmanager101" and password as "UserUser123"
     When user clicks on Fleet tab
     Then user should click on Vehicle Contract page
     Then user should be on All Vehicle Contract page
-
 
 @Driver
 Scenario: Drivers can NOT access the Vehicle contracts page.
