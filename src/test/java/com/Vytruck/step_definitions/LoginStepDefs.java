@@ -19,6 +19,7 @@ public class LoginStepDefs {
         String username = null;
         String password = null;
 
+
         if(userType.equalsIgnoreCase("driver")){
             username = ConfigurationReader.getProperty("driver_username");
             password = ConfigurationReader.getProperty("driver_password");

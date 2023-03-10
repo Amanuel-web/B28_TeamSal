@@ -6,7 +6,7 @@ Feature: As a user , i want to see edit car info icons from the Vehicle page
 
 @wip
   Scenario: user see the car edited options on the  vehicle page
-  Given the user logged in as "storemanager85"
+  Given the user logged in as "store manager"
     When user click  Vehicle under the Fleet
     And Verify any car info has 3 dots "..." , and there are  : ,,view, edit , delete " icons
 
