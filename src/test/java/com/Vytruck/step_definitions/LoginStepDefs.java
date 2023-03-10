@@ -14,8 +14,8 @@ public class LoginStepDefs {
     @Given("the user logged in as {string}")
     public void the_user_logged_in_as(String userType) {
         //based on input enter that user information
-        String username ="salesmanager101";
-        String password ="UserUser123";
+        String username =null;
+        String password =null;
 
         if(userType.equalsIgnoreCase("driver")){
             username = ConfigurationReader.getProperty("driver_username");

@@ -34,7 +34,7 @@ public class US06_Elena_step_definitions {
 
     @When("user click  Vehicle under the Fleet")
     public void user_click_vehicle_under_the_fleet() {
-
+ BrowserUtils.sleep(2);
         us6_elena_pages.fleet.click();
         us6_elena_pages.vehicle.click();
     }
