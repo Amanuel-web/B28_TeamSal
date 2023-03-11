@@ -19,6 +19,7 @@ public class LoginStepDefs {
         String username = null;
         String password = null;
 
+
         if(userType.equalsIgnoreCase("driver")){
             username = ConfigurationReader.getProperty("driver_username");
             password = ConfigurationReader.getProperty("driver_password");
@@ -32,6 +33,7 @@ public class LoginStepDefs {
         //send username and password and login
         new LoginPage().login(username,password);
     }
+/*
 
     @Given("the user logged in with username as {string} and password as {string}")
     public void the_user_logged_in_with_username_as_and_password_as(String username, String password) {
@@ -40,5 +42,6 @@ public class LoginStepDefs {
       LoginPage loginPage =new LoginPage();
       loginPage.login(username,password);
     }
+*/
 
 }

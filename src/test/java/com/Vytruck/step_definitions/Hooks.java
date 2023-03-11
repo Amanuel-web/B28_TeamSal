@@ -20,8 +20,13 @@ for ALL the SCENARIOS and even STEPS.
  */
 public class Hooks {
 
+//nice//////
+
+
     //import the @Before coming from io.cucumber.java
     @Before (order = 1)
+
+
     public void setupMethod(){
 
         Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
